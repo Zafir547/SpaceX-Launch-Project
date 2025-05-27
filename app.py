@@ -69,9 +69,6 @@ with tab3:
 
     st.markdown("Fill out launch details:")
 
-    name = st.text_input("🧾 Mission Name", value="Demo Mission")
-    date_utc = st.date_input("📅 Launch Date")
-
     rocket_encoded = st.selectbox("🚀 Rocket (Encoded)", options=[0, 1, 2], format_func=lambda x: f"Rocket {x}")
     launchpad_encoded = st.selectbox("🛰️ Launchpad (Encoded)", options=[0, 1, 2], format_func=lambda x: f"Launchpad {x}")
     payload_mass = st.number_input("📦 Payload Mass (kg)", min_value=0.0, max_value=50000.0, value=6000.0)
